@@ -40,13 +40,6 @@
     }
     </script>
     
-    <!-- Preconnect to Google Fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
-    
     <!-- CSS -->
     <link rel="stylesheet" href="css/styles.css">
     
@@ -58,7 +51,6 @@
     <nav class="navbar" id="navbar">
         <div class="nav-container">
             <div class="nav-logo">
-                <img src="https://raw.githubusercontent.com/ababeilex92-arch/BHAgency/main/BHAgencyLogo.png" alt="BHAgency Logo" class="nav-logo-img">
                 <a href="#home">BHAgency</a>
             </div>
             <ul class="nav-menu">
@@ -79,11 +71,7 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="hero-background">
-            <div class="geometric-shape shape-1"></div>
-            <div class="geometric-shape shape-2"></div>
-            <div class="geometric-shape shape-3"></div>
-        </div>
+        <div class="hero-background"></div>
         <div class="hero-top-bar">
             <div class="hero-logo">
                 <img src="https://raw.githubusercontent.com/ababeilex92-arch/BHAgency/main/BHAgencyLogo.png" alt="BHAgency Logo" class="hero-logo-img">
@@ -92,10 +80,34 @@
         <div class="hero-content">
             <div class="hero-text">
                 <h1 class="hero-title">Strategic IT Consulting & iGaming Marketing That Drives Results</h1>
-                <p class="hero-subtitle">Leading technology consulting and marketing strategy agency specializing in IT advisory, iGaming consulting, and digital transformation across Malta, Romania, Italy, and global markets.</p>
-                <div class="hero-cta">
-                    <a href="#contact" class="btn btn-primary">Get Your Free Strategy Session</a>
-                    <a href="#case-studies" class="btn btn-secondary">View Our Case Studies</a>
+                <p class="hero-subtitle">Your Strategic IT & iGaming Consulting Partners - Leading technology consulting and marketing strategy agency specializing in IT advisory, iGaming consulting, and digital transformation across Malta, Romania, Italy, and global markets.</p>
+                <div class="hero-buttons">
+                    <a href="#contact" class="btn btn-primary">Start Your Journey</a>
+                    <a href="#services" class="btn btn-secondary">Explore Services</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Statistics Section -->
+    <section id="statistics" class="statistics">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <div class="stat-number" data-target="40">0</div>
+                    <div class="stat-label">Years Experience</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="200">0</div>
+                    <div class="stat-label">Projects Completed</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="15">0</div>
+                    <div class="stat-label">Countries Served</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number" data-target="500">0</div>
+                    <div class="stat-label">Clients Transformed</div>
                 </div>
             </div>
         </div>
@@ -105,8 +117,8 @@
     <section id="about" class="section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Your Strategic IT & iGaming Consulting Partners</h2>
-                <p class="section-subtitle">40+ years combined experience in technology consulting and digital transformation</p>
+                <h2 class="section-title">About BHAgency</h2>
+                <p class="section-subtitle">Leading IT consulting and iGaming marketing strategy agency</p>
             </div>
             <div class="about-content">
                 <div class="about-text">
@@ -140,67 +152,35 @@
     </section>
 
     <!-- Services Section -->
-    <section id="services" class="section section-alt">
+    <section id="services" class="section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">Premier IT & iGaming Consulting Services</h2>
+                <h2 class="section-title">Services</h2>
                 <p class="section-subtitle">Comprehensive solutions for technology, marketing, and business transformation</p>
             </div>
             <div class="services-grid">
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="icon">💻</i>
-                    </div>
-                    <h3 class="service-title">IT Consulting Services</h3>
-                    <p class="service-description">Digital transformation consulting and enterprise IT solutions with focus on infrastructure optimization and cloud computing services.</p>
-                    <ul class="service-features">
-                        <li>Digital transformation consulting</li>
-                        <li>IT infrastructure optimization</li>
-                        <li>Cybersecurity consulting</li>
-                        <li>Technology strategy consulting</li>
-                    </ul>
+                    <h3>IT Consulting Services</h3>
+                    <p>Digital transformation consulting and enterprise IT solutions with focus on infrastructure optimization and cloud computing services.</p>
+                    <a href="#contact" class="btn btn-primary">Learn More</a>
                 </div>
 
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="icon">🎮</i>
-                    </div>
-                    <h3 class="service-title">iGaming Consulting Services</h3>
-                    <p class="service-description">Expert iGaming platform development and gaming technology solutions for online casino and sports betting operations.</p>
-                    <ul class="service-features">
-                        <li>iGaming platform development</li>
-                        <li>Online casino consulting</li>
-                        <li>Gaming regulatory compliance</li>
-                        <li>Player acquisition optimization</li>
-                    </ul>
+                    <h3>iGaming Consulting Services</h3>
+                    <p>Expert iGaming platform development and gaming technology solutions for online casino and sports betting operations.</p>
+                    <a href="#contact" class="btn btn-primary">Learn More</a>
                 </div>
 
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="icon">📈</i>
-                    </div>
-                    <h3 class="service-title">Marketing Strategy Services</h3>
-                    <p class="service-description">Digital marketing agency services and B2B marketing strategy with focus on technology marketing and growth marketing.</p>
-                    <ul class="service-features">
-                        <li>Digital marketing strategy</li>
-                        <li>Technology marketing</li>
-                        <li>Growth marketing services</li>
-                        <li>Marketing automation</li>
-                    </ul>
+                    <h3>Marketing Strategy Services</h3>
+                    <p>Comprehensive digital marketing strategies and growth hacking solutions for technology and gaming companies.</p>
+                    <a href="#contact" class="btn btn-primary">Learn More</a>
                 </div>
 
                 <div class="service-card">
-                    <div class="service-icon">
-                        <i class="icon">🔧</i>
-                    </div>
-                    <h3 class="service-title">Technology Advisory Services</h3>
-                    <p class="service-description">Enterprise technology consulting and IT infrastructure planning with expertise in software development and cloud migration.</p>
-                    <ul class="service-features">
-                        <li>Enterprise technology consulting</li>
-                        <li>Software development consulting</li>
-                        <li>Cloud computing consultants</li>
-                        <li>Digital transformation</li>
-                    </ul>
+                    <h3>Technology Advisory Services</h3>
+                    <p>Strategic technology consulting and CTO advisory services for startups and established enterprises.</p>
+                    <a href="#contact" class="btn btn-primary">Learn More</a>
                 </div>
             </div>
         </div>
@@ -210,14 +190,153 @@
     <section id="case-studies" class="section">
         <div class="container">
             <div class="section-header">
-                <h2 class="section-title">IT & iGaming Consulting Success Stories</h2>
-                <p class="section-subtitle">Real results for real clients across multiple industries</p>
+                <h2 class="section-title">Case Studies</h2>
+                <p class="section-subtitle">Success stories from our IT & iGaming consulting projects</p>
             </div>
-            <div class="case-studies-container">
+            <div class="case-studies-grid">
                 <div class="case-study-card">
-                    <div class="case-study-header">
-                        <h3>Italian Automotive Digital Transformation</h3>
-                        <span class="case-study-category">IT Consulting</span>
+                    <h3>Italian Automotive Digital Transformation</h3>
+                    <p>Complete digital transformation for a major Italian automotive company, implementing cloud infrastructure and AI-driven analytics.</p>
+                    <a href="#contact" class="btn btn-primary">View Case Study</a>
+                </div>
+
+                <div class="case-study-card">
+                    <h3>Malta iGaming Platform Optimization</h3>
+                    <p>Performance optimization and regulatory compliance for a leading Malta-based iGaming platform serving 100k+ users.</p>
+                    <a href="#contact" class="btn btn-primary">View Case Study</a>
+                </div>
+
+                <div class="case-study-card">
+                    <h3>Romanian FinTech IT Infrastructure</h3>
+                    <p>Enterprise IT infrastructure design and implementation for a Romanian FinTech startup, ensuring scalability and security.</p>
+                    <a href="#contact" class="btn btn-primary">View Case Study</a>
+                </div>
+
+                <div class="case-study-card">
+                    <h3>Global Sports Betting Technology Strategy</h3>
+                    <p>Technology strategy consulting for a global sports betting company, implementing modern microservices architecture.</p>
+                    <a href="#contact" class="btn btn-primary">View Case Study</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section id="team" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Team</h2>
+                <p class="section-subtitle">Meet our IT & iGaming consulting experts</p>
+            </div>
+            <div class="team-grid">
+                <div class="team-card">
+                    <div class="team-member-info">
+                        <h4>Alex Chen</h4>
+                        <p>Lead IT Consultant & CTO Advisor</p>
+                    </div>
+                    <p>15+ years in enterprise IT consulting and digital transformation, specializing in cloud architecture and scalability solutions.</p>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-member-info">
+                        <h4>Marcus Rodriguez</h4>
+                        <p>iGaming Strategy Consultant</p>
+                    </div>
+                    <p>12+ years in iGaming industry, expert in platform optimization, regulatory compliance, and player acquisition strategies.</p>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-member-info">
+                        <h4>Sarah Mitchell</h4>
+                        <p>Marketing Strategy Director</p>
+                    </div>
+                    <p>10+ years in digital marketing and growth hacking, focused on B2B technology marketing and demand generation.</p>
+                </div>
+
+                <div class="team-card">
+                    <div class="team-member-info">
+                        <h4>Emily Watson</h4>
+                        <p>Technology Advisory Lead</p>
+                    </div>
+                    <p>8+ years in technology consulting and startup advisory, specializing in MVP development and technology roadmap planning.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contact</h2>
+                <p class="section-subtitle">Start your IT & iGaming consulting journey today</p>
+            </div>
+            <div class="contact-form">
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="company">Company</label>
+                        <input type="text" id="company" name="company">
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service Interest</label>
+                        <input type="text" id="service" name="service" placeholder="IT Consulting, iGaming, Marketing, etc.">
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>BHAgency</h3>
+                    <p>Premier IT consulting and iGaming marketing strategy agency delivering results-driven solutions across Malta, Romania, Italy, and global markets.</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Services</h3>
+                    <p><a href="#services">IT Consulting Services</a></p>
+                    <p><a href="#services">iGaming Consulting Services</a></p>
+                    <p><a href="#services">Marketing Strategy Services</a></p>
+                    <p><a href="#services">Technology Advisory Services</a></p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <p>Email: info@bhagency.com</p>
+                    <p>Phone: +356 277 123 456</p>
+                    <p>Malta | Romania | Italy | Global</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Follow Us</h3>
+                    <p><a href="https://www.linkedin.com/company/bhagency">LinkedIn</a></p>
+                    <p><a href="https://twitter.com/bhagency">Twitter</a></p>
+                    <p><a href="#contact">Contact Form</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 BHAgency. All rights reserved. | IT Consulting & iGaming Marketing Strategy Experts</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="js/script.js"></script>
+</body>
+</html>
                     </div>
                     <div class="case-study-content">
                         <p>Complete IT infrastructure overhaul and digital strategy implementation with integrated marketing technology stack and CRM optimization.</p>
