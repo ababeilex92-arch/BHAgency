@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Test BHAgency Logo</title>
+</head>
+<body>
+    <h1>Testing Logo URLs</h1>
+    
+    <h2>Option 1: Correct Raw URL (Root)</h2>
+    <img src="https://raw.githubusercontent.com/ababeilex92-arch/BHAgency/main/BHAgencyLogo.png" alt="Logo Option 1" style="max-width: 200px; border: 1px solid #ccc;">
+    
+    <h2>Option 2: GitHub Pages URL (Root)</h2>
+    <img src="https://ababeilex92-arch.github.io/BHAgency/BHAgencyLogo.png" alt="Logo Option 2" style="max-width: 200px; border: 1px solid #ccc;">
+    
+    <h2>Option 3: Original Assets Path</h2>
+    <img src="https://ababeilex92-arch.github.io/BHAgency/assets/images/BHAgencyLogo.png" alt="Logo Option 3" style="max-width: 200px; border: 1px solid #ccc;">
+    
+    <h2>Option 4: Check GitHub Repository</h2>
+    <p>Visit: <a href="https://github.com/ababeilex92-arch/BHAgency/blob/main/BHAgencyLogo.png" target="_blank">View on GitHub</a></p>
+    
+    <script>
+        // Test each image
+        const images = document.querySelectorAll('img');
+        images.forEach((img, index) => {
+            img.onload = function() {
+                console.log(`Image ${index + 1} loaded successfully`);
+            };
+            img.onerror = function() {
+                console.error(`Image ${index + 1} failed to load: ${img.src}`);
+                img.style.border = '2px solid red';
+            };
+        });
+    </script>
+</body>
+</html>
